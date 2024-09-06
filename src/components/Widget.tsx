@@ -1,6 +1,7 @@
 // Each widget will be an independent component that receives configurable props.
 
 import React from 'react';
+import './Widget.css';
 
 interface WidgetProps {
   title: string;

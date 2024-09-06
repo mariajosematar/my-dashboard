@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Widget from './Widget';
+import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
   const [widgets, setWidgets] = useState([{ title: 'Weather', content: 'Sunny 22°C' }]);
@@ -13,7 +14,9 @@ const Dashboard: React.FC = () => {
   return (
     <div className="dashboard">
       {widgets.map((widget, idx) => (
-        <Widget key={idx} title={widget.title} content={widget.content} />
+        <div key={idx} className="widget">
+          <Widget title={widget.title} content={widget.content} />
+        </div>
       ))}
       <button onClick={addWidget}>Add Widget</button>
     </div>
