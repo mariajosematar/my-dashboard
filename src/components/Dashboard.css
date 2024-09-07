@@ -23,19 +23,23 @@
   color: #666666;
 }
 
-/* Widget container with grid layout */
+/* Widget container with flex layout */
 .widget-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center; /* Center widgets horizontally */
 }
 
 /* Styling for each widget container */
 .widget-wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
   border-radius: 8px;
   overflow: hidden; /* Ensure shadows and rounded corners are not cut off */
   transition: transform 0.3s ease; /* Smooth transition for animations */
+  width: 250px; /* Set fixed width for consistent layout */
 }
 
 /* Hover effect for widgets */
