@@ -1,13 +1,23 @@
+/* Styling for the widget */
 .widget {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #040404;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-  }
-  
-  .widget h3 {
-    margin-top: 0;
-  }
-  
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* White background for widgets */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+/* Hover effect for widgets */
+.widget:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.widget h3 {
+  margin-top: 0;
+  color: #004d00; /* Dark green for title */
+}
+
+.widget p {
+  color: #666666; /* Dark gray text for content */
+}
