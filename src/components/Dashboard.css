@@ -1,35 +1,70 @@
 .dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .widget {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-  }
-  
-  .widget h3 {
-    margin-top: 0;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.dashboard-header p {
+  color: #666;
+}
+
+.widget-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.widget-wrapper {
+  position: relative;
+}
+
+.widget-controls {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.widget-controls button {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.widget-controls button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.add-widget {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.add-widget:hover {
+  background-color: #0056b3;
+}
